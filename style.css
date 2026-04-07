@@ -14,11 +14,42 @@
 }
 .display{
     width: 100%;
-    font-size:30px;
+    font-size:40px;
     border: none;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3) inset;
 }
 .display:focus{
     outline: none;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top:20px;
+    grid-gap:15px;
+}
+button{
+    font-size:35px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+button:hover{
+    opacity:0.75;
+}
+button:active{
+    transform: scale(0.9);
+    box-shadow: 3px 3px 10px lightgreen;
+}
+.equal{
+    grid-row:span 3;
+    background-color:rgba(0,0,0,0.2);
+}
+.eval{
+    background-color:lightcoral;
+    color:whitesmoke;
+}
+.operator{
+    background-color: lightblue;
 }
